@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="587.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thebank.thebank.Controllers.dashboardcontroller">
+
+<children>
+    <Text fx:id="user_name" layoutX="35.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi, User" />
+    <Label fx:id="login_date" layoutX="694.0" layoutY="28.0" text="Date" />
+    <Text layoutX="707.0" layoutY="335.0" text="Account Summary" />
+    <Text layoutX="35.0" layoutY="85.0" text="My Accounts " />
+    <HBox layoutX="35.0" layoutY="131.0" prefHeight="190.0" prefWidth="273.0">
+        <children>
+            <AnchorPane prefHeight="190.0" prefWidth="184.0">
+                <children>
+                    <Text layoutX="25.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="**** **** **** " />
+                    <Text layoutX="259.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saving Account " wrappingWidth="96.79999999999995" />
+                  <Label fx:id="checking_acc_num" layoutX="95.0" layoutY="122.0" text="4558" />
+                  <Label fx:id="checking_username" layoutX="25.0" layoutY="22.0" text="Name" />
+                  <Label fx:id="checking_bal" layoutX="293.0" layoutY="22.0" text="Balance" />
+                </children>
+            </AnchorPane>
+        </children>
+    </HBox>
+    <VBox layoutX="653.0" layoutY="381.0" prefHeight="190.0" prefWidth="178.0">
+        <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Income : " />
+            <Text fx:id="income_lbl" strokeType="OUTSIDE" strokeWidth="0.0" text="+ $4000" />
+            <Line endX="51.29289245605469" endY="-0.98173588514328" startX="-100.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Expenses : " />
+            <Text fx:id="expense_lbl" strokeType="OUTSIDE" strokeWidth="0.0" text="- $2000" />
+        </children>
+    </VBox>
+    <Label layoutX="35.0" layoutY="352.0" text="Last Transactions" />
+    <Label layoutX="729.0" layoutY="109.0" text="Send Money" />
+    <ListView fx:id="trans_listview" layoutX="35.0" layoutY="391.0" prefHeight="172.0" prefWidth="512.0" />
+    <VBox layoutX="647.0" layoutY="152.0" prefHeight="190.0" prefWidth="152.0">
+        <children>
+            <Label text="Client username" />
+            <TextField fx:id="client_username" />
+            <Label text="Amount in $ " />
+            <TextField fx:id="send_money" />
+            <Button fx:id="send_money_btn" mnemonicParsing="false" onAction="#onClick_Send" text="Send Money " />
+        </children>
+    </VBox>
+    <TextField fx:id="withdraw_money" layoutX="419.0" layoutY="180.0" />
+    <Button fx:id="withdraw_money_btn" layoutX="419.0" layoutY="226.0" mnemonicParsing="false" onAction="#onClick_Withdraw" text="Withdraw Money" />
+    <Label layoutX="425.0" layoutY="152.0" text="Amount in $ " />
+    <Label layoutX="500.0" layoutY="109.0" text="Withdraw Money" />
+    <Label layoutX="505.0" layoutY="275.0" text="Deposit Money" />
+    <Label layoutX="419.0" layoutY="293.0" text="Amount in $ " />
+    <TextField fx:id="deposit_money" layoutX="413.0" layoutY="322.0" />
+    <Button fx:id="deposit_money_btn" layoutX="410.0" layoutY="357.0" mnemonicParsing="false" onAction="#onClick_Deposit" text="Deposit Money" />
+</children>
+
+</AnchorPane>
