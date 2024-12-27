@@ -3,19 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Age Calcuator</title>
+    <title>QR Code Generator</title>
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <h1>Age Calculator</h1>
-
-      <div class="input-container">
-        <input type="date" id="date" />
-        <button class="calculate-button">Calculate</button>
-      </div>
-      <h5 class="outputBox"></h5>
+      <input type="text" placeholder="Enter your text or url" class="input" />
+      <img class="output" />
+      <button class="generate">Generate QR Code</button>
     </div>
   </body>
 </html>
